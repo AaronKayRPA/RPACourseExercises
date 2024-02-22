@@ -1,0 +1,50 @@
+1. Write functions for a full burger meal: (I dont think this code is correct but hopefully the concept is correct)
+
+def makeburger():
+		burger = "bottom patty" + "hamburger" + "tomato" + "lettuce" + "pickles" + "sauce" + "top patty"
+		burgeramount = 1
+
+def makeside():
+		side = "salt" + "chips"
+		sideamount = 1
+
+def makedrink():
+		drinkflavour = input("What flavour drink would you like?\n")
+		size = input("What size " + drinkflavour + " would you like?\n")
+		drink = (size + drinkflavour)
+		drinkamount = 1
+
+def makefullmeal():
+	
+	makeburger()
+	makeside()
+	makedrink()
+
+	if ((burgeramount >= 1) and (sideamount >= 1) and (drinkamount >= 1)):
+		print("Here is your meal")
+		burgeramount -= 1
+		sideamount -= 1
+		drinkamount -= 1
+
+makefullmeal()
+
+2. Create a program/recipe for a fruit salad, using examples of all 3 operator groups:
+
+def maketastysalad():
+	orangesamount = 4
+	applesamount = 8
+	pearsamount = 2
+
+	while (applesamount > orangesamount) and (orangesamount > pearsamount):
+		orangesamount += 1
+		pearsamount += 1
+		
+		if (applesamount) == (orangesamount):
+			continue
+	print("We made a tasty salad with ", orangesamount, " oranges, ", applesamount, " apples and ", pearsamount, "pears")
+
+maketastysalad()
+
+
+
+	
